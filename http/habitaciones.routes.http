@@ -1,0 +1,17 @@
+### get habitaciones
+GET http://localhost:3000/api/habitaciones
+
+###
+POST http://localhost:3000/api/habitaciones
+Content-Type: application/json
+
+{
+  "tipo_de_habitacion": "Sencilla",
+  "estado": 0,
+  "precio":500.00
+}
+
+### Get habitacion by id
+GET http://localhost:3000/api/habitaciones/1
+
+

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    container_name: Hotel
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: '12345678'
+      MYSQL_DATABASE: Hotel
+      MYSQL_USER: hotel
+      MYSQL_PASSWORD: 'Hotel123'
+    ports:
+      - 8080:80
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d/
+    
