@@ -17,8 +17,8 @@ router.get("/reservaciones/:id_reservacion", getReservacion);
 // Eliminar 1 reservacion
 router.delete("/reservaciones/:id_reservacion", deleteReservacion);
 
-// Agregar 1 habitacion
-router.post("/habitaciones", createReservacion);
+// Agregar 1 reservacion
+router.post("/reservaciones", createReservacion);
 
 export default router;
  
