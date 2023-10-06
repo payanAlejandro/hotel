@@ -50,7 +50,7 @@ export const createUsuario = async (req, res) => {
   try {
     const {id_usuario, email, contrasena, nombre, apellido_p, apellido_m} = req.body;
     const [rows] = await pool.query(
-      "INSERT INTO reservaciones (id_usuario, email, contrasena, nombre, apellido_p, apellido_m) VALUES (?, ?, ?, ?, ?, ?)",
+      "INSERT INTO usuarios (id_usuario, email, contrasena, nombre, apellido_p, apellido_m) VALUES (?, ?, ?, ?, ?, ?)",
       [id_usuario, email, contrasena, nombre, apellido_p, apellido_m]
     );
     res.status(201).json({ id_usuario: rows.insertId, email, contrasena, nombre, apellido_p, apellido_m});

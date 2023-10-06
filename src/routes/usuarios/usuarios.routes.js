@@ -18,7 +18,7 @@ router.get("/usuarios/:id_usuario", getUsuario);
 router.delete("/usuarios/:id_usuario", deleteUsuario);
 
 // Agregar 1 usuario
-router.post("/usuarios", createUsuario);
+router.post("/agregar-usuario", createUsuario);
 
 export default router;
  
